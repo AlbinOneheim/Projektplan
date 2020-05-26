@@ -1,0 +1,64 @@
+/* Enkel CSS-reset */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  background: #2D2C2C;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+}
+
+header h1 {
+  color: #FF9100;
+  font-size: 75px;
+  font-family: 'Rokkitt', serif;
+  padding: 20px;
+}
+
+header .nav {
+  padding-top: 20px;
+  margin-right: 50px;
+}
+
+header .nav a {
+  text-decoration: none;
+  margin-left: 50px;
+  color: #FF9100;
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+}
+
+header .nav input {
+  margin-left: 50px;
+  font-size: 15px;
+}
+
+header .nav a img {
+  height: 60px;
+  width: 60px;
+  border-radius: 100px;
+}
+
+main {
+  width: 100%;
+  height: 799px;
+  background: #242424;
+  color: #FF9100;
+}
+/*# sourceMappingURL=main.css.map */
