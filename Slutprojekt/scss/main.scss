@@ -9,18 +9,30 @@ html {
     margin: 0;
     padding: 0;
   }
+
+/* Globala variablar */
+$headerBg-color: #2D2C2C;
+$mainBg-color: #242424;
+$textFärg-color: #FF9100;
+@mixin bildsize {
+    height: 60px;
+    width: 60px;
+    border-radius: 100px;
+}
+
 header {
     width: 100%;
     height: 150px;
-    background: #2D2C2C;
+    background: $headerBg-color;
     display: grid;
     grid-template-columns: 2fr 2fr;
 
-    h1 {
-        color: #FF9100;
+    #indexH1 {
+        color: $textFärg-color;
         font-size: 75px;
         font-family: 'Rokkitt', serif;
-        padding: 20px;
+        margin: 30px;
+        
     }
     .nav {
         padding-top: 20px;
@@ -29,7 +41,8 @@ header {
     .nav a {
         text-decoration: none;
         margin-left: 50px;
-        color: #FF9100;
+        padding: 10px;
+        color: $textFärg-color;
         font-size: 25px;
         font-family: 'Lato', sans-serif;
     }
@@ -37,17 +50,38 @@ header {
         margin-left: 50px; 
         font-size: 15px;
     }
-    .nav a img{
-        height: 60px;
-        width: 60px;
-        border-radius: 100px;
+    .nav a img {
+        @include bildsize();
     }
-}   
-
+}
 main {
     width: 100%;
     height: 799px;
-    background: #242424;
-    color: #FF9100;
+    background: $mainBg-color;
+    color: $textFärg-color;
+    font-family: 'Rokkitt', serif;
     
+}
+
+/* ************************ */
+/* CSS för login.php */
+/* Header för loggain.php */
+.loggaInHeader {
+    h1 {
+        text-align: center;
+        margin-left: 75%;
+        margin-top: 30px;
+    }
+    a {
+        text-decoration: none;
+        color: $textFärg-color;
+        font-size: 75px;
+        font-family: 'Rokkitt', serif;
+    }
+}
+/* Main för loggain.php */
+.LoggaInMain {
+    div img {
+        @include bildsize();
+    }
 }

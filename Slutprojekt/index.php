@@ -9,13 +9,13 @@
 <body>
     <div class="kontainer">
         <header>
-            <h1>FilmTipset</h1>
+            <h1 id ="indexH1">FilmTipset</h1>
              <div class="nav">
                 <a href="#">Topplista</a>
                 <a href="#">Gengre</a>
                 <a href="#">Fördig</a>
                 <input type="text" name="sök" placeholder="sök film">
-                <a href="#"><img src="./bilder/användaricon.png" alt="användarens icon"></a>
+                <a href="./loggain.php"><img src="./bilder/användaricon.png" alt="användarens icon"></a>
              </div>
              
         </header>
